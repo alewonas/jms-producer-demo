@@ -11,15 +11,29 @@ JMS Producer Demo is a Spring Boot application designed to function as an API fo
 
 To run this project locally, follow these steps:
 
-1. Clone the repository:
+1. Clone the repository
 
-2. Navigate to the project directory:
+2. Navigate to the project directory
 
 3. Build the project:
-
-4. Run the Spring Boot application:
+   mvn clean install
+4. Run the Spring Boot application
 
 5. The application should be accessible at `http://localhost:8080`. You can test it using the provided endpoints.
+
+## Configuration
+
+Before running the JMS Producer Demo, you need to configure your ActiveMQ connection details. Follow these steps to set up the necessary configuration:
+
+1. Navigate to the `src/main/resources` directory in the project.
+
+2. Open the `application.properties` file.
+
+3. Locate the following properties and update them with your ActiveMQ server details if you are not using the defaults:
+
+spring.activemq.broker-url=<Your ActiveMQ Broker URL><br>
+spring.activemq.user=<Your ActiveMQ Username><br>
+spring.activemq.password=<Your ActiveMQ Password>
 
 ## Usage
 
